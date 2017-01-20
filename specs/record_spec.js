@@ -12,7 +12,7 @@ describe("record", function(){
   it("has an artist", function(){
     assert.equal(record.artist, "Guns And Roses");
   })
-  it("has a name", function(){
+  it("has a price", function(){
     assert.equal(record.price, 9.99);
   })
 })
