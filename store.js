@@ -14,7 +14,6 @@ Store.prototype = {
       allRecords = allRecords.concat(toAdd);
       
     }
-    allRecords = allRecords.concat("fish");
     console.log(allRecords)
     return allRecords;
   },
