@@ -24,4 +24,8 @@ describe("store", function(){
     assert.deepEqual(customer.sell("Appetite For Destruction"), new Record("Guns And Roses", "Appetite For Destruction", 10));
     assert.equal(customer.cash, 100);
   })
+  it("cannot buy if no funds", function(){
+    customer.cash = 0;
+    assert.equal(customer.buy(new Record("Guns And Roses", "Appetite For Destruction", 10)), "Too rich for my blood");
+  })
 })
